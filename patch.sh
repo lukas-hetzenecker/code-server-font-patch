@@ -5,8 +5,8 @@ else
   CODE_SERVER_PATH="$1"
 fi
 
-WORKBENCH_PATH="$CODE_SERVER_PATH/lib/vscode/out/vs/workbench"
-WORKBENCH_CSS_PATH="$WORKBENCH_PATH/workbench.web.main.css"
+WORKBENCH_PATH="$CODE_SERVER_PATH/lib/vscode/out/vs/code/browser/workbench"
+WORKBENCH_CSS_PATH="$WORKBENCH_PATH/workbench.css"
 
 # Check if it is valid path
 if [ -z "$CODE_SERVER_PATH" -o ! -d "$WORKBENCH_PATH" ]; then
